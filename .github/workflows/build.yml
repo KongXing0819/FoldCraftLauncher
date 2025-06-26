@@ -33,32 +33,31 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
 
-      # 步骤 4: 编译 Release APK (此步骤对于两种触发方式都相同)
+      # 步骤 4: 编译 FCL 模块的 Release APK
+      # 修改点：指定编译 FCL module
       - name: Build with Gradle
-        run: ./gradlew assembleRelease
-        
-      - name: List files in outputs directory
-        run: ls -R ./app/build/outputs/
+        run: ./gradlew assembleRelease -Darch=arm64
   
-      # 步骤 5: [条件性上传] 如果是 Release 触发，则上传到 Release Assets
+      # 步骤 5: [条件性上传] 如果是 Release 触发，则上传所有 APK 到 Release Assets
       # 仅当触发事件是 'release' 时，此步骤才会执行
-      - name: Upload APK to Release
+      - name: Upload All APKs to Release
         if: github.event_name == 'release'
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./app/build/outputs/apk/release/app-release.apk
-          # 使用 Release 的标签名（版本号）来命名文件
-          asset_name: YourAppName-v${{ github.ref_name }}.apk
+          # 修改点：使用通配符匹配 FCL 模块输出目录下的所有 .apk 文件
+          asset_path: FCL/build/outputs/apk/release/*.apk
+          # 注意：asset_name 已被移除。当使用通配符上传多个文件时，
+          # action 会自动使用每个文件的原始名称作为 asset_name。
           asset_content_type: application/vnd.android.package-archive
 
-      # 步骤 6: [条件性上传] 如果是手动触发，则上传到 Action Artifacts
+      # 步骤 6: [条件性上传] 如果是手动触发，则将所有 APK 上传到 Action Artifacts
       # 仅当触发事件是 'workflow_dispatch' 时，此步骤才会执行
-      - name: Upload APK to Action Artifacts
+      - name: Upload All APKs to Action Artifacts
         if: github.event_name == 'workflow_dispatch'
         uses: actions/upload-artifact@v4
         with:
-          # Artifact 的名称，会显示在下载区域
-          name: release-apk
-          # 要上传的文件的路径
-          path: ./app/build/outputs/apk/release/app-release.apk
+          # Artifact 的名称，会显示在下载区域 (会是一个 zip 文件)
+          name: release-apks
+          # 修改点：使用通配符匹配 FCL 模块输出目录下的所有 .apk 文件
+          path: FCL/build/outputs/apk/release/*.apk
