@@ -77,7 +77,7 @@ android {
                         task.doLast {
                             val arch = System.getProperty("arch", "all")
                             val assetsDir = task.outputDir.get().asFile
-                            val jreList = listOf("jre8", "jre11", "jre17", "jre21")
+                            val jreList = listOf("jre21")
                             println("arch:$arch")
                             jreList.forEach { jre ->
                                 val runtimeDir = "$assetsDir/app_runtime/java/$jre"
