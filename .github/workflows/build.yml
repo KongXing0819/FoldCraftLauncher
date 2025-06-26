@@ -36,7 +36,10 @@ jobs:
       # 步骤 4: 编译 Release APK (此步骤对于两种触发方式都相同)
       - name: Build with Gradle
         run: ./gradlew assembleRelease
-
+        
+      - name: List files in outputs directory
+        run: ls -R ./app/build/outputs/
+  
       # 步骤 5: [条件性上传] 如果是 Release 触发，则上传到 Release Assets
       # 仅当触发事件是 'release' 时，此步骤才会执行
       - name: Upload APK to Release
