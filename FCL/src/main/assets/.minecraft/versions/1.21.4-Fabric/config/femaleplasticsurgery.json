@@ -1,0 +1,8 @@
+{
+  "bustSizeMax": 1.0,
+  "bustOffsetYMin": -1.5,
+  "bustOffsetZMin": -1.5,
+  "bustOffsetZMax": 0.0,
+  "bounceMultiplierMax": 1.0,
+  "floppyMultiplierMax": 1.5
+}

@@ -1,0 +1,13 @@
+{
+	"favorites": [
+		"{mode:\"CREATIVE\",type:\"roughlyenoughitems:gamemode\"}",
+		"{mode:\"SURVIVAL\",type:\"roughlyenoughitems:gamemode\"}",
+		"{type:\"roughlyenoughitems:weather\",weather:\"CLEAR\"}",
+		"{data:{type:\"minecraft:item\",value:{count:1,id:\"minecraft:oak_slab\"}},type:\"roughlyenoughitems:entry_stack\"}",
+		"{mode:\"NOT_SET\",type:\"roughlyenoughitems:time\"}",
+		"{mode:\"NOON\",type:\"roughlyenoughitems:time\"}",
+		"{data:{type:\"minecraft:item\",value:{count:1,id:\"minecraft:oak_planks\"}},type:\"roughlyenoughitems:entry_stack\"}"
+	],
+	"hiddenFavorites": [],
+	"displays": []
+}

@@ -1,0 +1,165 @@
+{
+  "maxStack": 1073741824,
+  "StacksizeOverride": [
+    {
+      "namespaceID": "minecraft:egg",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:snowball",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:oak_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:spruce_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:birch_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:jungle_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:acacia_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:dark_oak_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:mangrove_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:cherry_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:bamboo_oak_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:oak_wall_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:spruce_wall_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:birch_wall_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:jungle_wall_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:acacia_wall_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:dark_oak_wall_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:mangrove_wall_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:cherry_wall_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:bamboo_wall_sign",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:honey_bottle",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:white_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:orange_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:magenta_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:light_blue_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:yellow_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:lime_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:pink_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:gray_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:light_gray_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:cyan_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:purple_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:blue_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:brown_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:green_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:red_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:black_banner",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:writable_book",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:ender_pearl",
+      "value": 268435456
+    },
+    {
+      "namespaceID": "minecraft:armor_stand",
+      "value": 268435456
+    }
+  ]
+}
