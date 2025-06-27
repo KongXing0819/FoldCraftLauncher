@@ -1,6 +1,0 @@
-{
-  "bubbles_quality": "FAST",
-  "animations": true,
-  "opaque_faces": false,
-  "top_face_culling_method": "NON_AIR"
-}

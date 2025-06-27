@@ -1,7 +1,0 @@
-{
-  "useRomanNumerals": true,
-  "allowAnyEnchantment": false,
-  "allowLevelStacking": true,
-  "romanNumeralsThreshold": 10,
-  "maxEnchantmentLevel": 32767
-}
